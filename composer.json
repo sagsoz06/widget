@@ -1,5 +1,5 @@
 {
-  "name": "pingpong/widget",
+  "name": "sagsoz06/widget",
   "description": "Simple Widget System for Laravel Framework",
   "keywords": [
     "widget",
@@ -15,10 +15,10 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "illuminate/support": ">=5.2.*",
-    "illuminate/container": ">=5.2.*",
-    "illuminate/view": ">=5.2.*",
-    "illuminate/routing": ">=5.2.*"
+    "illuminate/support": "5.3.*",
+    "illuminate/container": "5.3.*",
+    "illuminate/view": "5.3.*",
+    "illuminate/routing": "5.3.*"
   },
   "require-dev": {
     "mockery/mockery": "~0.9",
