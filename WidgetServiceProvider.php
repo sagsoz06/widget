@@ -19,9 +19,14 @@ class WidgetServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['widget'] = $this->app->share(function ($app) {
+//        $this->app['widget'] = $this->app->share(function ($app) {
+//            $blade = $app['view']->getEngineResolver()->resolve('blade')->getCompiler();
+//
+//            return new Widget($blade, $app);
+//        });
+//
+        $this->app->singleton('widget', function($app) {
             $blade = $app['view']->getEngineResolver()->resolve('blade')->getCompiler();
-
             return new Widget($blade, $app);
         });
 
